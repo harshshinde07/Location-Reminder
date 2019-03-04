@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#4f4f4f"
+    android:elevation="4dp">
+
+    <ImageView
+        android:id="@+id/destination"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/alarm_name"
+        android:text="Destination Coordinates: "
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:src="@drawable/ic_place_white_24dp" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/alarm_vibration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alarm_location"
+        android:layout_marginTop="10dp"
+        android:text="Vibration"
+        android:textColor="#fff"
+        android:buttonTint="#fff"/>
+
+    <ImageView
+        android:id="@+id/ringtone"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_below="@+id/alarm_vibration"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_notifications_white_18dp"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:layout_marginRight="4dp" />
+
+    <TextView
+        android:id="@+id/range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ringtone"
+        android:text="Range: "
+        android:textSize="16sp"
+        android:textColor="#fff" />
+
+
+    <Button
+        android:id="@+id/alarm_delete"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/on_off"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_delete_white_24dp" />
+
+    <TextView
+        android:id="@+id/alarm_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="Name"
+        android:textColor="@color/textColor"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/show_range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="100"
+        android:textSize="15sp"
+        android:textColor="#fff"
+        android:layout_alignTop="@+id/range"
+        android:layout_toEndOf="@+id/range" />
+
+    <TextView
+        android:id="@+id/alarm_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Location Coordinates"
+        android:textColor="#fff"
+        android:layout_below="@+id/alarm_name"
+        android:drawableLeft="@drawable/ic_place_white_24dp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/alarm_ringtone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="my Ringtone"
+        android:textColor="#fff"
+        android:layout_alignTop="@+id/ringtone"
+        android:layout_toEndOf="@+id/destination" />
+
+    <ToggleButton
+        android:id="@+id/on_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alarm_location"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

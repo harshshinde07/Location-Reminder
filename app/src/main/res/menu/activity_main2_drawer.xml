@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_saved_alarms"
+            android:icon="@drawable/ic_alarm_on_black_24dp"
+            android:title="@string/saved_alarms" />
+        <item
+            android:id="@+id/nav_emergency"
+            android:icon="@drawable/ic_report_problem_black_24dp"
+            android:title="@string/emergency_contact" />
+        <item
+            android:id="@+id/nav_rate_app"
+            android:icon="@drawable/ic_grade_black_24dp"
+            android:title="@string/rate_app" />
+        <item
+            android:id="@+id/nav_share_app"
+            android:icon="@drawable/ic_share_black_24dp"
+            android:title="@string/share" />
+    </group>
+
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:title="@string/help" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_feedback_black_24dp"
+            android:title="@string/send_feedback" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_account_box_black_24dp"
+            android:title="@string/about" />
+    </group>
+
+</menu>

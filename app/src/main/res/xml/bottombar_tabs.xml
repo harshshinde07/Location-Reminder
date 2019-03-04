@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <tabs>
+        <tab
+            id="@+id/tab_normal"
+            icon="@drawable/ic_traffic_black_24dp"
+            title="Normal"
+            inActiveColor="#d1d1d1"
+            activeColor="#00FFFF"
+            barColorWhenSelected="#5c18af"
+            badgeBackgroundColor="#FF0000"/>
+        <tab
+            id="@+id/tab_satellite"
+            icon="@drawable/ic_satellite_black_24dp"
+            title="Satellite"
+            inActiveColor="#d1d1d1"
+            activeColor="#00FFFF"
+            barColorWhenSelected="#a650da"
+            badgeBackgroundColor="#FF0000"/>
+        <tab
+            id="@+id/tab_terrain"
+            icon="@drawable/ic_terrain_black_24dp"
+            title="Terrain"
+            inActiveColor="#d1d1d1"
+            activeColor="#00FFFF"
+            barColorWhenSelected="#c55819"
+            badgeBackgroundColor="#FF0000"/>
+        <tab
+            id="@+id/tab_hybrid"
+            icon="@drawable/ic_map_black_24dp"
+            title="Hybrid"
+            inActiveColor="#d1d1d1"
+            activeColor="#00FFFF"
+            barColorWhenSelected="#585657"
+            badgeBackgroundColor="#FF0000"/>
+    </tabs>
